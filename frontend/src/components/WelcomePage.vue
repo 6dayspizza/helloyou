@@ -1,7 +1,8 @@
 <!-- src/components/WelcomePage.vue -->
 <template>
-  <div id="welcome">
-    <router-view></router-view> <!-- Display the component for the current route -->
+  <div id="WelcomePage">
+    <h1>Welcome to the Welcome Page!</h1>
+    <router-view></router-view>
   </div>
 </template>
 

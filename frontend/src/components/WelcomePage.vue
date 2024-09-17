@@ -1,6 +1,6 @@
 <!-- src/components/WelcomePage.vue -->
 <template>
-  <div id="app">
+  <div id="welcome">
     <router-view></router-view> <!-- Display the component for the current route -->
   </div>
 </template>

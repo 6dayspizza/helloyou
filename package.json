@@ -1,6 +1,18 @@
 {
     "name": "helloyou",
     "version": "1.0.0",
+    "engines": {
+      "node": ">=16.x"
+    },
+    "scripts": {
+      "start": "node server/server.js",
+      "build": "cd frontend && npm install && npm run build"
+    },
+    "dependencies": {
+      // Dependencies for the Node.js server
+    }
+  }
+  
     "scripts": {
       "start": "node server/server.js",
       "build": "cd frontend && npm run build"

@@ -3,12 +3,22 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, '../dist')));
+// static files
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
-// Handle every other route with index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
+// other routes
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+});
+
+// test route
+app.get('/api', (req, res) => {
+  res.send('API is working!');
+});
+
+// errors
+app.use((req, res) => {
+  res.status(404).send('Not Found');
 });
 
 app.listen(port, () => {

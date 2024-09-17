@@ -9,6 +9,5 @@
       "build": "cd frontend && npm install && npm run build"
     },
     "dependencies": {
-      // Dependencies for the Node.js server
     }
 }

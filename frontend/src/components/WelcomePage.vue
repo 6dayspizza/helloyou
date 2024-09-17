@@ -11,7 +11,7 @@
       </div>
       <div class="use-middle">
         <ul>
-          <li><a href="#about">about</a></li>
+          <li><router-link to="/about">about</router-link></li>
           <li><a href="#work">projects</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
@@ -19,7 +19,7 @@
     </header>
     <footer id="footer">
       <p class="copyright">
-        © Ruth"
+        © Ruth
       </p>
     </footer>
     <router-view></router-view>

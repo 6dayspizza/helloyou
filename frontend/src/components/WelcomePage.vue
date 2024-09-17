@@ -4,7 +4,10 @@
     <header id ="header">
       <div class="logo"></div>
       <div class="content">
-        <h1>Welcome to the Welcome Page!</h1>
+        <div class="inner">
+          <h1>Welcome to the Welcome Page!</h1>
+          <p>some text</p>
+        </div>
       </div>
       <div class="use-middle">
         <ul>
@@ -16,7 +19,7 @@
     </header>
     <footer id="footer">
       <p class="copyright">
-        "© Ruth."
+        © Ruth"
       </p>
     </footer>
     <router-view></router-view>

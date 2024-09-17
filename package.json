@@ -2,12 +2,13 @@
     "name": "helloyou",
     "version": "1.0.0",
     "engines": {
-      "node": ">=16.x"
+        "node": ">=16.x"
     },
     "scripts": {
-      "start": "node server/server.js",
-      "build": "cd frontend && npm install && npm run build"
+        "start": "node server/server.js",
+        "build": "cd frontend && npm install && npm run build"
     },
     "dependencies": {
+        "express": "^4.21.0"
     }
-  }
+}

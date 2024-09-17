@@ -1,7 +1,7 @@
 <!-- src/components/WelcomePage.vue -->
 <template>
   <div id="wrapper">
-    <header id ="header">
+    <header id ="header" style="display:none;">
       <div class="logo"></div>
       <div class="content">
         <div class="inner">
@@ -11,18 +11,30 @@
       </div>
       <div class="use-middle">
         <ul>
-          <li><router-link to="/about">about</router-link></li>
+          <li><a href="#about">about</a></li>
           <li><a href="#work">projects</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#contact">say hi</a></li>
         </ul>
       </div>
     </header>
-    <footer id="footer">
+    <div id="main">
+      <article id="intro" style class="active">
+        <h2 class="major">About</h2>
+        <span class="image main">
+          <img src="images/pic01.jpg" alt>
+        </span>
+        <p>Some text about me.</p>
+        <div class="close">"Close."</div>
+      </article>
+    </div>
+    <footer id="footer" style="display:none;">
       <p class="copyright">
-        © Ruth
+        © Ruth.
       </p>
     </footer>
     <router-view></router-view>
+  </div>
+  <div id="bg">
   </div>
 </template>
 

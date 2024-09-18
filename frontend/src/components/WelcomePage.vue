@@ -37,6 +37,10 @@
     
     <section class="ae-container-fluid rk-main">
       <h2>hello you</h2>
+      <section class="ae-container-fluid ae-container-fluid--inner loading rk-portfolio ">
+        <div class="rk-portfolio__items"><img src="assets/img/manuel-liniger-lsDsUMtrbb0-unsplash.jpg" alt="random image">
+          </div>
+      </section>
     </section>
     
     <footer class="ae-container-fluid rk-footer">

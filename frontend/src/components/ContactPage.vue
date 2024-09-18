@@ -18,7 +18,7 @@
         <h1 class="rk-logo">Ruth</h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li class="rk-menu__item"><router-link to="/welcome" class="rk-menu__link">home</router-link></li>
+            <li class="rk-menu__item"><router-link to="/" class="rk-menu__link">home</router-link></li>
             <li class="rk-menu__item"><router-link to="/portfolio" class="rk-menu__link">portfolio</router-link></li>
             <li class="rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
             <li class="active rk-menu__item"><router-link to="/contact" class="rk-menu__link">say hi</router-link></li>

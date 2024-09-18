@@ -1,40 +1,54 @@
 <!-- src/components/WelcomePage.vue -->
 <template>
-  <div id="wrapper">
-    <header id ="header" style="display:none;">
-      <div class="logo"></div>
-      <div class="content">
-        <div class="inner">
-          <h1>Welcome to the Welcome Page!</h1>
-          <p>some text</p>
-        </div>
-      </div>
-      <div class="use-middle">
-        <ul>
-          <li><a href="#about">about</a></li>
-          <li><a href="#work">projects</a></li>
-          <li><a href="#contact">say hi</a></li>
-        </ul>
+  <div class="top-fixed">
+    <header class="ae-container-fluid ae-container-fluid--full rk-header">
+      <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+      <label for="mobile-menu">
+        <svg>
+          <use xlink:href="@/assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="@/assets/img/symbols.svg#bar"></use>
+        </svg>
+        <svg>
+          <use xlink:href="@/assets/img/symbols.svg#bar"></use>
+        </svg>
+      </label>
+      <div class="ae-container-fluid rk-topbar">
+        <h1 class="rk-logo"><a href="index.html">urku portfolio<sup>tm</sup></a></h1>
+        <nav class="rk-navigation">
+          <ul class="rk-menu">
+            <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">home</a></li>
+            <li class="rk-menu__item"><a href="portfolio.html" class="rk-menu__link">portfolio</a></li>
+            <li class="rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
+            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">say hi</a></li>
+          </ul>
+          <form class="rk-search">
+            <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+            <label for="urku-search">
+              <svg>
+                <use xlink:href="@/assets/img/symbols.svg#icon-search"></use>
+              </svg>
+            </label>
+          </form>
+        </nav>
       </div>
     </header>
-    <div id="main">
-      <article id="intro" style class="active">
-        <h2 class="major">About</h2>
-        <span class="image main">
-          <img src="images/pic01.jpg" alt>
-        </span>
-        <p>Some text about me.</p>
-        <div class="close">"Close."</div>
-      </article>
-    </div>
-    <footer id="footer" style="display:none;">
-      <p class="copyright">
-        © Ruth.
-      </p>
+    
+    <section class="ae-container-fluid rk-main">
+      <!-- Your content goes here -->
+    </section>
+    
+    <footer class="ae-container-fluid rk-footer">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+          <ul class="rk-menu rk-footer-menu">
+            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">the boring stuff</a></li>
+          </ul>
+          <p class="rk-footer__text rk-footer__copy"><span class="ae-u-bold">©</span><span class="ae-u-bolder">2015 URKU PORTFOLIO</span> All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
-    <router-view></router-view>
-  </div>
-  <div id="bg">
   </div>
 </template>
 

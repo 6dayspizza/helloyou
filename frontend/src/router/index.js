@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import WelcomePage from '@/components/WelcomePage.vue';
 import AboutPage from '@/components/AboutPage.vue';
-import WorkPage from '@/components/WorkPage.vue';
+import PortfolioPage from '@/components/PortfolioPage.vue';
+import ContactPage from '@/components/ContactPage.vue';
+import ImpressumPage from '@/components/ImpressumPage.vue';
 
 const routes = [
   { path: '/', component: WelcomePage },
   { path: '/about', component: AboutPage },
-  { path: '/work', component: WorkPage },
+  { path: '/portfolio', component: PortfolioPage },
+  { path: '/contact', component: ContactPage },
+  { path: '/impressum', component: ImpressumPage },
 ];
 
 const router = createRouter({

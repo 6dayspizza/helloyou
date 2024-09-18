@@ -1,4 +1,4 @@
-<!-- src/components/AboutPage.vue -->
+<!-- src/components/ImpressumPage.vue -->
 <template>
   <div class="top-fixed">
     <header class="ae-container-fluid ae-container-fluid--full rk-header">
@@ -20,7 +20,7 @@
           <ul class="rk-menu">
             <li class="rk-menu__item"><router-link to="/welcome" class="rk-menu__link">home</router-link></li>
             <li class="rk-menu__item"><router-link to="/portfolio" class="rk-menu__link">portfolio</router-link></li>
-            <li class="active rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
+            <li class="rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
             <li class="rk-menu__item"><router-link to="/contact" class="rk-menu__link">say hi</router-link></li>
           </ul>
           <form class="rk-search">
@@ -36,14 +36,14 @@
     </header>
     
     <section class="ae-container-fluid rk-main">
-      <h2>about</h2>
+      <h2>impressum</h2>
     </section>
     
     <footer class="ae-container-fluid rk-footer">
       <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
           <ul class="rk-menu rk-footer-menu">
-            <li class="rk-menu__item"><router-link to="/impressum" class="rk-menu__link">the boring stuff</router-link></li>
+            <li class="active rk-menu__item"><router-link to="/impressum" class="rk-menu__link">the boring stuff</router-link></li>
           </ul>
           <p class="rk-footer__text rk-footer__copy"><span class="ae-u-bold">©</span><span class="ae-u-bolder">2024 URKU PORTFOLIO</span> All Rights Reserved.</p>
         </div>
@@ -54,6 +54,6 @@
 
 <script>
 export default {
-  name: 'AboutPage'
+  name: 'ImpressumPage'
 }
 </script>

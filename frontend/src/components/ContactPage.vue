@@ -1,4 +1,4 @@
-<!-- src/components/AboutPage.vue -->
+<!-- src/components/ContactPage.vue -->
 <template>
   <div class="top-fixed">
     <header class="ae-container-fluid ae-container-fluid--full rk-header">
@@ -20,8 +20,8 @@
           <ul class="rk-menu">
             <li class="rk-menu__item"><router-link to="/welcome" class="rk-menu__link">home</router-link></li>
             <li class="rk-menu__item"><router-link to="/portfolio" class="rk-menu__link">portfolio</router-link></li>
-            <li class="active rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
-            <li class="rk-menu__item"><router-link to="/contact" class="rk-menu__link">say hi</router-link></li>
+            <li class="rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
+            <li class="active rk-menu__item"><router-link to="/contact" class="rk-menu__link">say hi</router-link></li>
           </ul>
           <form class="rk-search">
             <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
@@ -36,7 +36,7 @@
     </header>
     
     <section class="ae-container-fluid rk-main">
-      <h2>about</h2>
+      <h2>contact</h2>
     </section>
     
     <footer class="ae-container-fluid rk-footer">
@@ -54,6 +54,6 @@
 
 <script>
 export default {
-  name: 'AboutPage'
+  name: 'ContactPage'
 }
 </script>

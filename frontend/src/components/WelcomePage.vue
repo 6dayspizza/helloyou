@@ -15,13 +15,13 @@
         </svg>
       </label>
       <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a href="index.html">urku portfolio<sup>tm</sup></a></h1>
+        <h1 class="rk-logo">Ruth</h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li class="active rk-menu__item"><a href="index.html" class="rk-menu__link">home</a></li>
-            <li class="rk-menu__item"><a href="portfolio.html" class="rk-menu__link">portfolio</a></li>
+            <li class="active rk-menu__item"><router-link to="/welcome" class="rk-menu__link">home</router-link></li>
+            <li class="rk-menu__item"><router-link to="/portfolio" class="rk-menu__link">portfolio</router-link></li>
             <li class="rk-menu__item"><router-link to="/about" class="rk-menu__link">about</router-link></li>
-            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">say hi</a></li>
+            <li class="rk-menu__item"><router-link to="/contact" class="rk-menu__link">say hi</router-link></li>
           </ul>
           <form class="rk-search">
             <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
@@ -36,16 +36,16 @@
     </header>
     
     <section class="ae-container-fluid rk-main">
-      <!-- Your content goes here -->
+      <h2>hello you</h2>
     </section>
     
     <footer class="ae-container-fluid rk-footer">
       <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
           <ul class="rk-menu rk-footer-menu">
-            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">the boring stuff</a></li>
+            <li class="rk-menu__item"><router-link to="/impressum" class="rk-menu__link">the boring stuff</router-link></li>
           </ul>
-          <p class="rk-footer__text rk-footer__copy"><span class="ae-u-bold">©</span><span class="ae-u-bolder">2015 URKU PORTFOLIO</span> All Rights Reserved.</p>
+          <p class="rk-footer__text rk-footer__copy"><span class="ae-u-bold">©</span><span class="ae-u-bolder">2024 URKU PORTFOLIO</span> All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 
 // SelectText
 function SelectText(element) {

@@ -33,9 +33,8 @@
 </template>
 
 <script>
-export default {
-  name: 'WelcomePage'
-}
+  export default {
+    name: 'WelcomePage'}
 </script>
 
 <style scoped>
